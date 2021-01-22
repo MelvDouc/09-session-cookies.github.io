@@ -14,8 +14,13 @@
         $req->bindParam(':address', $_POST['address'], PDO::PARAM_STR);
         $req->bindParam(':zip', $_POST['zip'], PDO::PARAM_STR);
         $req->bindParam(':city', $_POST['city'], PDO::PARAM_STR);
-        $req->bindParam('register_date', $registerDate, PDO::PARAM_STR);
+        $req->bindParam('register_date', $registerDate);
 
         $req->execute();
+    }
+
+    else if(isset($_GET['connect'])){
+
+        
     }
 ?>

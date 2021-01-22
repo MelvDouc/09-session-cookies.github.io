@@ -11,38 +11,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php require_once('./templates/head.html');?>
     <title>Inscription</title>
 </head>
 <body>
 
     <h1>Inscription</h1>
 
-    <form action="./traitement.php?register" method="post">
+    <form action="./traitement.php?register" method="post" class="form-w-66">
         <div>
-            <label for="username"></label>
+            <label for="username">Nom d'utilisateur</label>
             <input type="text" name="username" placeholder="Votre pseudo&hellip;" required>
         </div>
 
         <div>
-            <label for="email"></label>
-            <input type="email" name="email" placeholder="adresse@email.fr" required>
+            <label for="email">Courriel</label>
+            <input type="email" name="email" placeholder="exemple@email.fr" required>
         </div>
 
         <div>
-            <label for="password"></label>
+            <label for="password">Mot de passe</label>
             <input type="password" name="password" placeholder="••••••••" required>
         </div>
 
         <div>
-            <label for="address"></label>
+            <label for="address">Adresse</label>
             <input type="text" name="address" placeholder="2 rue Clémenceau">
         </div>
 
         <div>
             <label for="zip">Code postal</label>
-            <input type="number" name="zip" min="00001" max="99999" placeholder="75000">
+            <input type="number" name="zip" min="1000" max="99999" placeholder="75000">
         </div>
 
         <div>
@@ -51,9 +50,11 @@
         </div>
 
         <div>
-            <input type="submit" value="inscription">
+            <input type="submit" value="S'inscrire">
         </div>
     </form>
+
+    <p><a href="./index.php">Retour à l'accueil.</a></p>
     
 </body>
 </html>

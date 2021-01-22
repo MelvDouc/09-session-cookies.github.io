@@ -1,7 +1,7 @@
 <?php
 
     $host = 'localhost';
-    $db = '08-crud';
+    $db = '09-session-cookies';
     $user = 'root';
     $password = '';
 
