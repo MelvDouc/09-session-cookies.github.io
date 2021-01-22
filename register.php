@@ -1,12 +1,6 @@
-<!--
-    - id
-    - pseudo
-    - email
-    - mdp
-    - adresse
-    - code postal
-    - ville
--->
+<?php
+    include_once('session.php');
+?>
 
 <!DOCTYPE html>
 <html lang="fr">

@@ -60,10 +60,19 @@ form input[type="submit"]:hover {
 }
 
 form input[type="submit"]:active {
-    transform: scale(.75);
+    transform: scale(.85);
 }
 
 /*  */
 
 .form-w-50 {width: 50%}
 .form-w-66 {width: 66.66%}
+
+.fade-out {
+    animation: fade 10s linear forwards;
+}
+
+@keyframes fade {
+    from {opacity: 1}
+    to {opacity: 0}
+}
