@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    padding: .33em;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+form > div {
+    margin-block: 1em;
+}
